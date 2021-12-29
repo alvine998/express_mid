@@ -7,7 +7,7 @@ module.exports = (app) => {
             cb(null, "resources/upload/");
         },
         filename(req,file,cb){
-            cb(null, `${file.fieldname}_${Date.now()}_${file.originalname}`);
+            cb(null, `${file.fieldname}_${file.originalname}`);
         },
     });
 
