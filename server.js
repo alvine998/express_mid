@@ -44,6 +44,7 @@ require('./routes/promo.routes.js')(app);
 require('./routes/info.routes.js')(app);
 require('./routes/image.routes.js')(app);
 require('./routes/banner.routes.js')(app);
+require('./routes/karir.routes.js')(app);
 
 const dirname = path.resolve();
 app.use("/resources/upload/", express.static(path.join(dirname, "/resources/upload/")));
